@@ -35,7 +35,7 @@ body {
   font-family: var(--font-family);
   background-color: var(--grey-900);
   color: var(--white);
-  font-size: var(--font-regular);
+  font-size: var(--font-size-regular);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,10 @@ img {
   color: var(--green);
   font-weight: var(--font-bold);
 }
+
+/* .bio {
+  font-size: var(--font-regular);
+} */
 
 .links {
   display: flex;
