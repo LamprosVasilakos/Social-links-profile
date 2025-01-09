@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* === COLORS === */
+
+  --white: hsl(0, 0%, 100%);
+
+  --green: hsl(75, 94%, 57%);
+
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  /* === TYPOGRAPHY === */
+
+  --font-family: "Inter", sans-serif;
+  --font-bold: 700;
+  --font-semi-bold: 600;
+  --font-regular: 400;
+  --font-size-big: 24px;
+  --font-size-regular: 14px;
+  --line-height: 1.5;
+}
+
+/* === GLOBAL RESETS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--grey-900);
+  color: var(--white);
+  font-size: var(--font-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img,
+picture,
+video,
+canvas {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.card {
+  max-width: 384px;
+  background-color: var(--grey-800);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+img {
+  border-radius: 50%;
+  width: 88px;
+}
+
+.name {
+  margin-bottom: 4px;
+  font-size: var(--font-size-big);
+}
+
+.location {
+  color: var(--green);
+  font-weight: var(--font-bold);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.links li {
+  width: 100%;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  padding-block: 12px;
+  background-color: var(--grey-700);
+  font-weight: var(--font-bold);
+  border-radius: 8px;
+  transition: background-color 300ms, color 300ms;
+}
+
+.link:hover {
+  background-color: var(--green);
+  color: var(--grey-700);
+}
+
+@media screen and (width <= 769px) {
+  .card {
+    min-width: 456px;
+  }
+}
+
+@media screen and (width <= 376px) {
+  .card {
+    min-width: 327px;
+  }
+}
